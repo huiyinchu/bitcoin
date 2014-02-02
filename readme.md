@@ -1,4 +1,4 @@
-A simple project aboout exchange between bitcoin and usd
+A simple project about exchange between bitcoin and usd
 
 1.Pre requirement
 nodejs/npm and bowser have been installed
