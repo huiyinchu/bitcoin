@@ -1,0 +1,23 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.area-input{
+  margin:0 auto;
+  width:650px;
+}
+.input-group.btc{
+  width:250px;
+  float:left;
+}
+.btn.convert{
+  width:100px;
+}
+.input-group.usd{
+  width:250px;
+  float:right;
+}

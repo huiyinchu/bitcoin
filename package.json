@@ -1,0 +1,12 @@
+{
+    "name": "BTCUSD",
+    "description": "BTC USD",
+    "version": "0.1.0",
+    "scripts": {
+    },
+    "devDependencies": {
+        "mathjs": "latest",
+        "express": "3.x",
+        "ejs": "~0.8.4"
+    }
+}

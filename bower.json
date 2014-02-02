@@ -1,0 +1,9 @@
+{
+  "name": "BTCUSD",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "1.2.10",
+    "angular-route":"1.2.10",
+    "bootstrap": "3.0.3"
+  }
+}

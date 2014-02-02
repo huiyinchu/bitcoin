@@ -1,0 +1,47 @@
+<div class="starter-template" ng-controller="ExchangeController">
+  <h1>BTC USD EXCHANGE</h1>
+
+  <p class="">
+    <label  class="radio-inline">
+      <input name= "buyType" id="buybtc" type="radio"
+             ng-model="data.exchange_type"
+             ng-change="inputChange('input_buy')"
+             value="buybtc" ng-blur="alert(1)"/>
+      BUY BTC(sell usd)
+    </label>
+
+
+   <label  class="radio-inline">
+     <input name= "buyType" id="sellbtc" type="radio"
+            ng-model="data.exchange_type"  ng-change="inputChange('input_sell')" value="sellbtc"/>
+     SELL BTC(buy usd)
+   </label>
+
+  </p>
+
+  <p>
+  <div class="area-input">
+    <div class="input-group btc">
+      <input type="text" class="form-control" ng-model="data.btc" ng-change="inputChange('input_btc',data.btc)">
+      <span class="input-group-addon">BTC</span>
+    </div>
+
+    <a class="btn btn-default convert"  data-ng-click="convertClick()">
+      <span ng-show="data.input_type=='usd'"><=</span>Convert <span ng-show="data.input_type=='btc'">=></span>
+    </a>
+
+    <div class="input-group usd">
+      <input type="text" class="form-control" ng-model="data.usd" ng-change="inputChange('input_usd',data.usd)">
+      <span class="input-group-addon">USD</span>
+    </div>
+
+  </div>
+
+
+  </p>
+  <p  class="info">
+    <div ng-show="data.error" class="alert-danger">{{data.error}}</div>
+    <div ng-show="info.loading" class="alert">loading...</div>
+  </p>
+
+</div>
